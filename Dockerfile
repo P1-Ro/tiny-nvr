@@ -27,7 +27,7 @@ ENV TZ=Europe/Bratislava \
     VIDEO_FORMAT=mp4
 
 RUN apk update \
-    && apk add tzdata ffmpeg \
+    && apk add bash tzdata ffmpeg \
     && rm -rf /var/cache/apk/* \
     && mkdir -p /usr/data/recordings
 
