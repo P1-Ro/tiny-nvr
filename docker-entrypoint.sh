@@ -86,4 +86,4 @@ ffmpeg -rtsp_transport tcp \
     -segment_atclocktime 1 \
     -strftime 1 \
     "$dir"/%Y-%m-%d_%H-%M-%S."$fileExtension" \
-    -loglevel panic
+    -loglevel warning
